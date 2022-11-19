@@ -1,0 +1,205 @@
+:root{
+  --background-general: #FFFFFF;
+  --background-slogan: #2F303A;
+  --background-comand: #F5F4FA;
+  --color-logo: #000000;
+  --color-general: #212121;
+  --color-last: #757575;
+  --color-link: #2196f3;
+  --color-slogan: #ffffff;
+  --color-button: #F5F4FA;
+  --color-button-activ :#188CE8;
+  --color-address-finish: rgba(255, 255, 255, 0.6);
+  --color-shadow: rgba(0, 0, 0, 0.15);
+}
+
+
+body {
+  background-color: var(--background-general);
+  color: var(--color-general);
+  font-family: 'Roboto', sans-serif;
+}
+
+/* logotip */
+.logo {
+  font-family: 'Raleway', sans-serif;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  color: var(--color-link)
+}
+.logo .up {
+  color: var(--color-logo);
+}
+.logo .down {
+  color: var(--color-slogan);
+}
+
+/* menu nav */
+.dot {
+  list-style: none;
+}
+.nav .link {
+  color: var(--color-general);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.nav .link:hover,
+.nav .link:focus {
+  color: var(--color-link);
+}
+.nav .link.current {
+  color: var(--color-link);
+}
+.contakt .link {
+    color: var(--color-last);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+}
+.contakt .link:hover,
+.contakt .link:focus {
+  color: var(--color-link);
+}
+
+/* slogan */
+.slogan {
+  background-color: var(--background-slogan);
+}
+.slogan-titel {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-slogan);
+}
+
+/* button */
+.button-ind {
+  background-color: var(--color-link);
+  color: var(--color-slogan);
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  box-shadow: 0px 4px 4px var(--color-shadow);
+}
+.button-ind:hover,
+.button-ind:focus {
+  background-color: var(--color-button-activ);
+}
+.button-port {
+  background-color: var(--color-button);
+  color: var(--color-general);
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.button-port:hover,
+.button-port:focus {
+  background-color: var(--color-link);
+  color: var(--color-slogan);
+}
+
+/* specifical */
+.specifical .titel-ind {
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--color-general);
+}
+.specifical .text-ind {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--color-last);
+}
+
+/* work */
+.work .titels {
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--color-general);
+}
+
+/* comand */
+.comand {
+  background-color: var(--background-comand);
+}
+.comand .titels {
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--color-general);
+}
+.comand .name {
+  font-size: 16px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--color-general);
+}
+.comand .proff {
+  font-size: 16px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--color-last);
+}
+
+/* finish */
+.footer {
+  background-color: var(--background-slogan);
+}
+.address {
+  color: var(--color-slogan);
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+.address .link {
+  color: var(--color-slogan);
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--color-address-finish);
+}
+.address .link:hover,
+.address .link:focus {
+  color: var(--color-link);
+}
+
+
+/* portfolio */
+.content .titel-port {
+font-size: 18px;
+line-height: 2;
+letter-spacing: 0.06em;
+color: var(--color-general);
+}
+.content .text-port {
+font-size: 16px;
+line-height: 1.88;
+letter-spacing: 0.03em;
+color: var(--color-last);
+}
