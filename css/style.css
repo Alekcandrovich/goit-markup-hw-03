@@ -10,7 +10,8 @@
   --color-button: #F5F4FA;
   --color-button-activ :#188CE8;
   --color-address-finish: rgba(255, 255, 255, 0.6);
-  --color-shadow: rgba(0, 0, 0, 0.15);
+  --color-shadow-ind: rgba(0, 0, 0, 0.15);
+  --color-shadow-port: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 
@@ -93,7 +94,7 @@ body {
 
   background-color: var(--color-link);
   color: var(--color-slogan);
-  box-shadow: 0px 4px 4px var(--color-shadow);
+  box-shadow: var(--color-shadow);
 
   cursor: pointer;
   font-family: inherit;
@@ -109,8 +110,12 @@ body {
 }
 .button-port {
   display: inline-block;
+  border-radius: 4px;
+
   background-color: var(--color-button);
   color: var(--color-general);
+  box-shadow: var(--color-shadow-port);
+
   cursor: pointer;
   font-family: inherit;
   font-weight: 500;
@@ -118,13 +123,17 @@ body {
   line-height: 1.63;
   text-align: center;
   letter-spacing: 0.03em;
-  box-shadow: 0px 4px 4px var(--color-shadow);
-  border-radius: 4px;
 }
 .button-port:hover,
 .button-port:focus {
   background-color: var(--color-link);
   color: var(--color-slogan);
+}
+.button-port.one {
+  padding: 6px 25px;
+}
+.button-port.all {
+  padding: 6px 22px; 
 }
 
 /* specifical */
