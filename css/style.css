@@ -39,6 +39,8 @@ body {
 
 /* menu nav */
 .dot {
+  padding: 0;
+  margin: 0;
   list-style: none;
 }
 .nav .link {
@@ -71,10 +73,14 @@ body {
 
 /* slogan */
 .slogan {
+  padding: 0;
+  margin: 0;
   background-color: var(--background-slogan);
   text-align: center;
 }
 .slogan-titel {
+  padding: 0;
+  margin: 0;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
