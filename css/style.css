@@ -17,18 +17,23 @@
 
 body {
   margin: 0;
+
+  font-family: 'Roboto', sans-serif;
+
   background-color: var(--background-general);
   color: var(--color-general);
-  font-family: 'Roboto', sans-serif;
 }
 
 /* logotip */
 .logo {
+  margin-right: 93px;
+  
   font-family: 'Raleway', sans-serif;
   font-size: 26px;
   line-height: 1.2;
   letter-spacing: 0.03em;
   text-decoration: none;
+  
   color: var(--color-link)
 }
 .logo .up {
@@ -37,20 +42,30 @@ body {
 .logo .down {
   color: var(--color-slogan);
 }
-
+/* flex */
+.nav {
+  display: flex;
+  align-items: center;
+}
 /* menu nav */
 .dot {
   padding: 0;
   margin: 0;
   list-style: none;
-}
+  }
+.nav .item + .item {
+  margin-left: 50px;
+}  
 .nav .link {
-  color: var(--color-general);
+  display: block;
+  padding: 20px 0;
   text-decoration: none;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  
+  color: var(--color-general);
 }
 .nav .link:hover,
 .nav .link:focus {
@@ -58,6 +73,13 @@ body {
 }
 .nav .link.current {
   color: var(--color-link);
+}
+.contakt {
+  display: flex;
+  margin-left: auto;
+}
+.contakt .item + .item {
+  margin-left: 50px;
 }
 .contakt .link {
   color: var(--color-last);
@@ -75,14 +97,14 @@ body {
 /* slogan */
 .slogan {
   margin-bottom: 84px;
-
+  
   background-color: var(--background-slogan);
   text-align: center;
+  height: 600px;
 }
 .slogan-titel {
-  padding: 0;
+  padding: 200px 0 0 0;
   margin-top: 0;
-  margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -144,19 +166,20 @@ body {
   padding: 6px 22px; 
 }
 
-/* specifical */
-
+/* container */
 .container {
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  margin-bottom: 84px;
 }
+
+/* specifical */
 .specifical {
+  display: flex;
   padding: 0;
-  margin: 0;
+  margin: 0 0 94px 0;
 }
 .specifical .titel-ind {
   margin: 0 0 10px 0; 
@@ -175,9 +198,8 @@ body {
   letter-spacing: 0.03em;
   color: var(--color-last);
 }
-
-/* work */
-.work .titels {
+/* titels */
+.titels {
   padding: 0;
   margin: 0 0 50px 0;
   font-size: 36px;
@@ -186,22 +208,23 @@ body {
   letter-spacing: 0.03em;
   color: var(--color-general);
 }
+/* work */
+.work {
+  display: flex;
+  margin: 0 0 94px 0;
+  padding: 0;
+}
+.work .item + .item {
+  margin-left: 30px;
+}
 
 /* comand */
 .comand {
-  margin: 0;
+  display: flex;
+  margin: 0 0 94px 0;
   padding: 0;
 
   background-color: var(--background-comand);
-}
-.comand .titels {
-  padding: 0;
-  margin: 188px 0 50px 0;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--color-general);
 }
 .comand .name {
   margin: 0 0 10px 0; ;
@@ -226,9 +249,14 @@ body {
 
 /* finish */
 .footer {
+  display: flex;
+  align-items: center;
+
   background-color: var(--background-slogan);
+  height: 252px;
 }
 .address {
+  align-items: center;
   color: var(--color-slogan);
   font-style: normal;
   font-size: 14px;
@@ -251,13 +279,35 @@ body {
 
 
 /* portfolio */
+.filter {
+  display: flex;
+  justify-content: center;
+  margin-top: 94px;
+}
+.filter .item + .item {
+  margin-left: 8px;
+}
+.content {
+  margin: 56px 0 94px 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  }
+.content-element {
+  margin-right: 30px;
+
+}
+
 .content .titel-port {
+  margin: 20px 0 0 0;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--color-general);
 }
 .content .text-port {
+  margin: 4px 0 0 0;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;

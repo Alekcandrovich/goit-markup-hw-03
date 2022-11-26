@@ -18,20 +18,20 @@
 <body>
 <!--general-->
   <div class="container">
-  <header>
+  <header class="nav">
     <a href="./index.html" class="logo">Web<span class="logo up">Studio</span></a>
-    <nav class="nav"> 
+    <nav> 
 <!--navigation-->
       <ul class="nav dot">
-        <li><a href="./index.html" class="link current">Студія</a></li>
-        <li><a href="./portfolio.html" class="link">Портфоліо</a></li>
-        <li><a href="./index.html" class="link">Контакти</a></li>
+        <li class="nav item"><a href="./index.html" class="link current">Студія</a></li>
+        <li class="nav item"><a href="./portfolio.html" class="link">Портфоліо</a></li>
+        <li class="nav item"><a href="./index.html" class="link">Контакти</a></li>
       </ul>
     </nav>
 <!--contact-->
     <ul class="contakt dot">
-      <li><a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a></li>
-      <li><a href="tel:+380961111111" class="link">+38 096 111 11 11</a></li>
+      <li class="contakt item"><a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a></li>
+      <li class="contakt item"><a href="tel:+380961111111" class="link">+38 096 111 11 11</a></li>
     </ul>
   </header>
   </div>
@@ -42,7 +42,7 @@
       <button type="button" class="button-ind">Замовити послугу</button>
      </section>
     <div class="container">
-      <section class="specifical">
+      <section>
         <ul class="specifical dot">
           <li>
             <h3 class="titel-ind">УВАГА ДО ДЕТАЛЕЙ</h3>
@@ -64,23 +64,20 @@
       </section>
     </div>
     <div class="container">
-      <section class="work">
+      <section>
           <h2 class="titels">Чим ми займаємося</h2>
           <ul class="work dot">
-           <li>
-              <img src="./images/jpg-1.jpg" alt="Десктопні додатки" width=370 />
+            <li class="work item"><img src="./images/jpg-1.jpg" alt="Десктопні додатки" width=370 />
             </li>
-            <li>
-              <img src="./images/jpg-2.jpg" alt="Мобільні додатки" width=370 />
-            </li>
-           <li>
-              <img src="./images/jpg-3.jpg" alt="Дизайнерські рішення" width=370 />
+            <li class="work item"><img src="./images/jpg-2.jpg" alt="Мобільні додатки" width=370 />
+            </li >
+            <li class="work item"><img src="./images/jpg-3.jpg" alt="Дизайнерські рішення" width=370 />
             </li>
           </ul>
       </section>
     </div>
     <div class="container">
-       <section class="comand">
+       <section>
           <h2 class="titels">Наша команда</h2>
           <ul class="comand dot">
             <li>
@@ -109,21 +106,23 @@
   </main>
 <!--finish-->
   <footer class="footer">
-    <a href="./index.html" class="logo">Web<span class="logo down">Studio</span></a>
-    <address>
-      <ul class="address dot">
-        <li>
-          <a href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9" target="_blank" rel="noopener noreferrer nofollow"
-             class="address">м. Київ, пр-т Лесі Українки, 26</a>
-        </li>      
-        <li>
-          <a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a><br>
-        </li>
-        <li>
-          <a href="tel:+380961111111" class="link">+38 096 111 11 11</a>
-        </li>
-      </ul>
-    </address>
+    <div class="container">
+        <a href="./index.html" class="logo">Web<span class="logo down">Studio</span></a>
+        <address>
+          <ul class="address dot">
+            <li>
+              <a href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9" target="_blank" rel="noopener noreferrer nofollow"
+                 class="address">м. Київ, пр-т Лесі Українки, 26</a>
+            </li>      
+            <li>
+              <a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a><br>
+            </li>
+            <li>
+              <a href="tel:+380961111111" class="link">+38 096 111 11 11</a>
+            </li>
+          </ul>
+        </address>
+    </div>    
   </footer>
 </body>
 
