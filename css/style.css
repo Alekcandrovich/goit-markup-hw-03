@@ -9,7 +9,8 @@
   --color-slogan: #ffffff;
   --color-button: #f5f4fa;
   --color-button-activ: #188ce8;
-  --color-border: #ececec;
+  --color-border-index: #ececec;
+  --color-border-portfolio: #eeeeee;
   --color-address-finish: rgba(255, 255, 255, 0.6);
   --color-shadow-ind: 0px 4px 4px rgba(0, 0, 0, 0.15);;
   --color-shadow-port: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
@@ -28,6 +29,7 @@ body {
 /* logotip */
 .logo {
   margin-right: 93px;
+
   font-family: 'Raleway', sans-serif;
   font-size: 26px;
   line-height: 1.2;
@@ -61,6 +63,7 @@ body {
 }
 .nav .link {
   padding: 8px 0;
+
   text-decoration: none;
   font-weight: 500;
   font-size: 14px;
@@ -95,18 +98,20 @@ body {
 
 /* slogan */
 .slogan {
-
   background-color: var(--background-slogan);
+
   text-align: center;
 }
 .slogan-titel {
   margin: 94px 0 30px 0;
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+
   color: var(--color-slogan);
 }
 
@@ -170,29 +175,35 @@ body {
 .specifical .titel-ind {
   margin: 0 0 10px 0;
   padding: 0;
+
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+
   color: var(--color-general);
 }
 .specifical .text-ind {
   margin: 0;
   padding: 0;
+
   width: 270px;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+
   color: var(--color-last);
 }
 /* titels */
 .titels {
   padding: 0;
   margin: 0 0 50px 0;
+
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
+
   color: var(--color-general);
 }
 /* work */
@@ -227,6 +238,7 @@ body {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-align: center;
+
   color: var(--color-general);
 }
 .comand .proff {
@@ -237,6 +249,7 @@ body {
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
+
   color: var(--color-last);
 }
 
@@ -247,12 +260,13 @@ body {
   padding: 64px 0;
 
   background-color: var(--background-slogan);
-  
 }
 .address {
   margin: 20px 0 0 0;
   align-items: center;
+
   color: var(--color-slogan);
+
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
@@ -261,12 +275,14 @@ body {
 }
 .address .link {
   margin: 9px 0 0 0;
+
   color: var(--color-slogan);
+  color: var(--color-address-finish);
+
   text-decoration: none;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: var(--color-address-finish);
 }
 .address .link:hover,
 .address .link:focus {
@@ -291,22 +307,27 @@ body {
 }
 .content-element {
   margin-right: 30px;
+  border-bottom: 1px solid var(--color-border-portfolio);
+  border-width: 370px
 }
 .content-element:nth-child(3n+3) {
   margin: 0;
 }
-
 .content .titel-port {
   margin: 20px 0 0 0;
+
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+
   color: var(--color-general);
 }
 .content .text-port {
   margin: 4px 0 0 0;
+
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
+
   color: var(--color-last);
 }
